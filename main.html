@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatharth Chauhan | Java Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+ 
+    <!-- Header with name and title -->
+    <header class="header">
+      <h1>Yatharth Chauhan</h1>
+      <p>Aspiring Java Full Stack Developer | MCA Student</p>
+    </header>
+ 
+    <!--  navigation menu -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+ 
+    <!-- My acting passion section -->
+    <section id="home" class="home-section">
+      <h2>Acting and Connecting with People</h2>
+      <p>
+        Acting has always been more than just a hobby for me — it's a way to understand emotions,
+        perspectives, and human behavior. I enjoy stepping into different roles and expressing
+        stories in a way that connects with people on a deeper level. Alongside this, I genuinely
+        value building meaningful connections, whether through conversations, teamwork, or
+        professional networking.
+      </p>
+      
+      <!-- Hobby benefits list -->
+      <ol class="hobby-benefits">
+        <li>
+          <strong>Stronger Communication Skills</strong> - Acting enhances expression, confidence,
+          and clarity, which directly improves public speaking and professional interactions.
+          <button class="delete-btn" onclick="removeitem(this)">Delete</button>
+        </li>
+        <li>
+          <strong>Better Emotional Intelligence</strong> - Understanding different characters and
+          people builds empathy, helping in teamwork, leadership, and client relationships.
+          <button class="delete-btn" onclick="removeitem(this)">Delete</button>
+        </li>
+        <li>
+          <strong>Improved Networking & Collaboration</strong> - Connecting with people creates
+          opportunities, strengthens professional relationships, and fosters collaborative growth.
+          <button class="delete-btn" onclick="removeitem(this)">Delete</button>
+        </li>
+      </ol>
+      
+      <!-- Add new hobby benefit -->
+      <div class="hobby-input-group">
+        <input type="text" id="hobby-input" placeholder="Add new hobby benefit...">
+        <button id="add-hobby-btn">Add Benefit</button>
+      </div>
+    </section>
+ 
+    <!-- About me section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>
+        I am an MCA student and aspiring Java Full Stack Developer with a strong foundation in web
+        technologies, backend systems, and AI-powered applications. My journey in tech started with
+        curiosity and evolved into building real-world projects — from developing a detective-based
+        Android game integrated with IBM Watson AI to creating a face recognition attendance system
+        using Python.
+      </p>
+      <p>
+        Beyond development, I've also worked as a Java Full Stack Recruiter, which gave me a unique
+        perspective on both sides of the tech industry. I enjoy solving practical problems through
+        clean backend logic, responsive front-end experiences, and intelligent automation.
+      </p>
+    </section>
+ 
+    <!-- My project showcase -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>CIPHER: The Vanishing Vineyard</h3>
+          <p>
+            A mystery-detective Android game developed using Kotlin in Android Studio. Features an
+            immersive storyline with hidden clues, puzzles, and AI-powered chatbot integration using
+            IBM Watson Assistant.
+          </p>
+          <a href="https://github.com/yatharthchuahan/Cipher-Vanishing-vineyard-game" target="_blank">View on GitHub</a>
+        </div>
+ 
+        <div class="project-card">
+          <h3>Oragtre App</h3>
+          <p>
+            A cross-platform mobile application built with Flutter for managing inventory, sales,
+            and user accounts. Supports Android, iOS, web, and desktop platforms.
+          </p>
+          <a href="https://github.com/yatharthchuahan/Orgate-APP" target="_blank">View on GitHub</a>
+        </div>
+ 
+        <div class="project-card">
+          <h3>Face Recognition Attendance System</h3>
+          <p>
+            A Python-based application that automates attendance using computer vision and facial
+            recognition technology to identify individuals in real time and record attendance with
+            timestamps.
+          </p>
+          <a href="https://github.com/yatharthchuahan/Attendance-Auto" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Contact form and info -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yatharth@example.com">yatharth@example.com</a></p>
+      <p>Location: India</p>
+      
+      <form id="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+ 
+    <!-- Social links footer -->
+    <footer class="footer">
+      <p>Connect with me:</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/yatharth-chauhan-222567328" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/yatharthchuahan" target="_blank">GitHub</a></li>
+      </ul>
+      <!-- Live clock -->
+      <p style="margin-top: 15px;">Current time: <span id="current-time"></span></p>
+    </footer>
+ 
+
+    <script src="script.js"></script>
+  </body>
+</html>

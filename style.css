@@ -1,0 +1,339 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0D1117;
+    color: #C9D1D9;
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #58A6FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styling */
+.header {
+    background-color: #161B22;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #58A6FF;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #8B949E;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #161B22;
+    padding: 12px 20px;
+    border-bottom: 1px solid #30363D;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    font-size: 0.95rem;
+    color: #8B949E;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #58A6FF;
+    text-decoration: none;
+}
+
+/* Section styling */
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid #30363D;
+}
+
+section h2 {
+    font-size: 1.75rem;
+    color: #C9D1D9;
+    margin-bottom: 20px;
+}
+
+/* Home section */
+.home-section p {
+    color: #8B949E;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.home-section ol {
+    padding-left: 20px;
+    color: #8B949E;
+}
+
+.home-section ol li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.home-section ol li strong {
+    color: #C9D1D9;
+}
+
+/* New Hobby input and buttons */
+.hobby-input-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hobby-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #C9D1D9;
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+}
+
+#hobby-input:focus {
+    outline: none;
+    border-color: #58A6FF;
+}
+
+#add-hobby-btn {
+    background-color: #58A6FF;
+    color: #0D1117;
+    border: none;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#add-hobby-btn:hover {
+    background-color: #1F6FEB;
+    color: #ffffff;
+}
+
+/* Delete buttons */
+.delete-btn {
+    background-color: #F85149;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.delete-btn:hover {
+    background-color: #DA3633;
+}
+
+/* About section */
+.about-section p {
+    color: #8B949E;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+/* Projects grid layout */
+.projects-section h2 {
+    margin-bottom: 24px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: #C9D1D9;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #8B949E;
+    margin-bottom: 14px;
+}
+
+.project-card a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Contact form */
+.contact-section p {
+    color: #8B949E;
+    margin-bottom: 8px;
+}
+
+.contact-section form {
+    margin-top: 20px;
+    max-width: 550px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #8B949E;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #C9D1D9;
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #58A6FF;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #58A6FF;
+    color: #0D1117;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #1F6FEB;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background-color: #161B22;
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 30px;
+    border-top: 1px solid #30363D;
+}
+
+.footer p {
+    color: #8B949E;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer ul li a {
+    font-size: 0.95rem;
+    color: #58A6FF;
+}
+
+/* Time display in footer */
+#current-time {
+    font-family: 'Inter', monospace;
+    font-size: 0.9rem;
+    background: rgba(88, 166, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #30363D;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hobby-input-group {
+        flex-direction: column;
+    }
+    
+    #hobby-input {
+        min-width: 100%;
+    }
+}
